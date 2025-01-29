@@ -141,7 +141,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
       "sudo apt-get update -y",
       "sudo apt-get install -y nodejs npm git",
 
-      "git clone https://github.com/<YOUR_USER>/<YOUR_REACT_REPO>.git /home/${var.admin_username}/react-app",
+      "git clone https://github.com/EyaRidene/terraform-azure-project.git /home/${var.admin_username}/react-app",
       "cd /home/${var.admin_username}/react-app",
 
       "npm install",
